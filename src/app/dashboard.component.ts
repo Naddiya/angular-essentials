@@ -3,29 +3,19 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-dashboard',
   template: `
-    <div>
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <span class="navbar-brand mb-0 h1">Navbar</span>
-        </div>
-      </nav>
-      <div>
-        <button
-          type="button"
-          class="btn btn-primary"
-          (click)="toggleState($event)"
-        >
-          <input type="text" [(ngModel)]="loadState" />
-          {{ loadState }}
-        </button>
-      </div>
+      <hr>
+    <div class="container">
+      <h2>Your dashboard !</h2>
+      <button (click)="onSwitchState($event)">Switch State</button>
+      <p [textContent]="loadState"></p>
+      <input type="text" [(ngModel)]="loadState">
     </div>
   `,
 })
 export class DashboardComponent {
   loadState = 'Loading ...';
 
-  toggleState(event: any) {
+  onSwitchState(event: any) {
     if (this.loadState !== 'Finished') {
       this.loadState = 'Finished';
     } else if (this.loadState === 'Finished') {
