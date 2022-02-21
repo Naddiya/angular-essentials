@@ -5,10 +5,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserComponent } from './user.component';
-import { DashboardComponent } from './dashboard.component';
+// import { DashboardComponent } from './dashboard.component';
 
 @NgModule({
-  declarations: [DashboardComponent, AppComponent, UserComponent],
+  declarations: [AppComponent, UserComponent],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],

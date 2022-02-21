@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
       <h2>Your dashboard !</h2>
       <button (click)="onSwitchState($event)">Switch State</button>
       <p [textContent]="loadState"></p>
-      <input type="text" [(ngModel)]="loadState">
+      <!-- <input type="text" [(ngModel)]="loadState"> -->
     </div>
   `,
 })
