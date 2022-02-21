@@ -2,3 +2,4 @@
 <h1>Welcome to {{title}}</h1>
 <!-- <router-outlet></router-outlet> -->
 <app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
+<app-cart [items]="rootItems" (itemAdded)="onItemWasAdded($event)"></app-cart>

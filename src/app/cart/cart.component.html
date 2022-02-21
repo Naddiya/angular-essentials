@@ -1,0 +1,9 @@
+<hr>
+<div class="list-group container">
+  <h3>Cart</h3>
+  <input type="text" [(ngModel)]="newItem">
+  <button (click)="addItem()">Add Item</button>
+  <li class="list-group-item" *ngFor="let item of items">
+    {{item}}
+  </li>
+</div>
